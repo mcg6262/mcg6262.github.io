@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                                                                                                                                                                                         <!DOCTYPE html>
 <html lang="en">
   <header>
     <meta charest="UTF-8">
@@ -9,136 +9,24 @@
   <body>
     <section id="navbar">
       <a href="#welcome-section">About</a>
-      <a href = "#analysis-projects-link" >Data Analysis</a>
-      <a href="#design-projects-link" >Design and Visualization</a>
+      <a href="#paintings" >Paintings</a>
+      <a href="#charcoals" >Charcoals</a>
+      <a href="#figures" >Figure Drawings</a>
       <a href="#contact">Contact</a>
     </section>
     <section id="welcome-section">
         <div class="tile">
       <h1>Welcome!</h1>
-      <p>My name is Mia George, and I am a recent graduate with bachelor's degrees in neuroscience and psychology. I also have extensive experience in data analysis, data visualization, and web development. Check out my recent projects below!</p>
+      <p>My name is Mia George, and I am an artist based in Cleveland, Ohio. Check out my recent projects below!</p>
     </div>
     </section>
-    <section id="analysis">
-      <div id="analysis-projects">
-        <div id="analysis-projects-link">
+    <section id="paintings">
+      <div id="paintings">
+        <div id="paintings-link">
           <div id="section-tile">
-            <h2>Data Analysis Project: Do STD Rates Impact Birth Rate?</h2>
+            <h2>Paintings</h2>
           </div>
         </div>
-        <p class="section-heading" id="intro">Introduction
-          <p class="section-text" id="intro-text">“In 2022, more than 2.5 million cases of syphilis, gonorrhea, and chlamydia were reported in the United States. The most alarming concerns center around the syphilis and congenital syphilis epidemics, signaling an urgent need for swift innovation and collaboration from all STI prevention partners”[1]. With some of the highest STD rates recently in the USA, there should be innovation to prevent the contact of an STD as it can lead to a variety of health problems such as damaging organs, bad genital health, or even more so can lead to damaging pregnancy[2]. Since STDs can complicate pregnancies such as stillbirth and miscarriages that would on paper directly link to birth rate. However, there have been no studies done on a direct correlation between birth rates and std rates. Therefore, we were aiming to research if there truly is a correlation between STD rates and birth rates as we expect there to be a correlation between the two as STD rates can lead to complications in pregnancies which could affect birth rates. </p>
-          <p class="section-sub-heading" id="data">Data</p>
-          <p class="section-text" id="data-text">For birth rates our natality data had come from the Center for Disease Control and Prevention where it spans from 1995-2022[3]. For STD rates our data also comes from the Center for Disease Control and Prevention where it spans from 1996-2014[4]. The CDC is a reliable source as it follows high quality guidelines to maintain high levels of information as well as participating in peer review for quality control[5]. This data from CDC offers the opportunity to measure STD rates with Birth Rates per year, especially with the vast amount of data acquired from both datasets spanning from the 1990s to the 2010s with having over 10,000 rows of data to observe.</p>
-          <p class="section-sub-heading" id="approach">Approach</p>
-          <p class="section-text" id="approach-text">Moving forward, our approach to completing our research started with organizing the natality data, mainly solving issues regarding bias comparison, the natality data not documenting some birth rates, and clearing off columns of data not needed for analysis. For organizing the STD dataset, we had simply filtered down the columns not needed for analysis. We then went into visualizing the natality data into 50 different graphs for each state showing the birth rates over a 10 year period while for STD rates, we had used bar graphs to visualize the data set which we learned that the two most common STDs were chlamydia and gonorrhea. We had then manipulated our approach with this result in mind and had made choropleth plots to show the relative rates of chlamydia, rates of gonorrhea, and birth rates by state. To further better visualize this dataset we went down from 50 graphs to 4 by separating states into Northeast, Midwest, South, and West. Finally, scatter plots were created for each region with birth rate on the y-axis plotted against disease rate on the x-axis in order to conduct Pearson's correlation test to see if there is a correlation between STD rates and Birth rates. </p>
-          <p class="section-sub-heading" id="summary">Summary and Insights</p>
-          <p class="section-text" id="summary-text">Our first major result that we had gotten came from visualizing the STD Rates in bar graphs in which we had gotten back that the two most common STDs were chlamydia and gonorrhea in which we had decided those two would be best to represent the STD rates along birth rates. When we had created the scatter plots with birth rate against STD rate, we had done a Pearson’s correlation test and had found that there are varying degrees of correlation, suggesting that the impact of STDs on birth rates may be influenced by various factors. It could be influenced by regional, cultural and sociodemographic factors such as access to healthcare, education, socioeconomic status, and cultural attitudes towards sexual health. 
-            Syphilis, Gonorrhea and Chlamydia can indirectly cause infertility through pelvic inflammatory disease, which leads to damage in the fallopian tubes, uterus and surrounding tissues. However, these STDs are easily treatable and can be detected before they can cause permanent damage to the reproductive system and render one infertile. Frequency of STD check ups in various regions, could also be a factor to consider in further research.
-            This, as well as the effect of intensity of public health interventions, could influence both STD and birth outcomes. In order to answer the question, “Do STD rates affect Birth rates?”, we would have to conduct further research with these factors included.
-            </p>
-        </p>
-        <p class="section-heading" id="methods">Methods
-          <p class="section-text" id="methods-text">
-            Our original data sets used in this study come from the Center for Disease Prevention and Control (CDC) as .txt files. We had three data sets describing natality trends with “nat1” spanning from 1995-2002, “nat2” spanning 2003-2006, and “nat3” spanning 2007-2014. However, we ran into an issue early on due to the fact that the natality data from years 1996 to 2002 did not document birth rates, but only the number of live births. We decided to narrow our focus to the years 2003-2014. Birth rate was calculated by the CDC by dividing the number of live births in a population in a year by the midyear resident population. For census years, rates are based on unrounded census counts of the resident population as of April 1. However, we noticed that most of the census data between 1990 and 2000 were taken on July 1st of each year. To avoid biased comparison, we decided to work with the birth rate provided in the data. We ultimately combined the data sets into one set, called “nat,” which spanned from 2003-2013, and contained the columns State, State Code, Year, Year Code and Birth Rate. We did some cleaning of this set to only include the columns State, Year, and Birth Rate, since those were all we needed for our analysis. 
-            <br><br>The STD data set we used also came from the CDC and spanned from 1996-2014. The data set included many columns; Disease, Disease Code, State, State Code, Year, Year Code, Gender, Gender Code, STD Cases, Population, and Rate. We filtered down the data to a new data set called “std” which contained only the columns Disease, State, Year, Gender Code, STD Cases, Population, and Rate.
-            <br><br>Figure 1 depicts the overall workflow of this study. The first few steps involved cleaning and organizing the data sets as previously described. Initially, we wanted to visualize the data to get a sense for trends and patterns right off the bat. We divided the natality data set into two halves based on the first and last 25 states alphabetically. We plotted the birth rate trends over this ten year period by state to get a sense of the general trends. We also plotted bar charts of STD rates nationally. We noticed that chlamydia and gonorrhea were by far the two most common STDs, with chlamydia being the more common of the two. These two diseases became the focus of our study. 
-            <br><br>After this was established, we manipulated our datasets to make them easier and more straightforward to analyze. We separated the data into a new data frame containing all of the chlamydia data called “chlam_df,” as well as a separate new data frame containing the gonorrhea data called “gon_df.” This process involved selecting all the rows in the “std” data set where the Disease value was “Chlamydia,” selecting the Year, State, and Gender Code values from the set, then running through the rows of the “nat” data set to see if the State value matched, and if so, combining the corresponding Birth Rate column to the new data frame. The same process was conducted for STD rows where the Disease value was “Gonorrhea,” and the subsequent two data frames contained the following columns; State, Year, Gender Code, Birth Rate, and Rate (referring to disease diagnosis rate). 
-            <br><br>After the two diseases, chlamydia and gonorrhea, were divided into separate data frames, the trends in disease diagnosis rates were plotted by state. This allowed us to further visualize general trends and how they differ by state. In addition, we used choropleth plots to show the relative rates of chlamydia, rates of gonorrhea, and birth rates by state, respectively. These plots provided a framework for us to start brainstorming other confounding cultural and geographical factors that may influence the outcome of our data.
-            <br><br>From here, we aimed to further break down the rows of data by geographical region. In order to get more specific with our analyses, each state was grouped into either the Northeast (Maine, Pennsylvania, New York, Connecticut, Massachusetts, Rhode Island, New Jersey, Delaware, Maryland, Vermont, New Hampshire), Midwest (North Dakota, South Dakota, Nebraska, Kansas, Minnisota, Iowa, Missouri, Wisconsin, Michigan, Illinois, Ohio) , South (Florida, Texas, Oklahoma, Virginia, West Virginia, North Carolina, South Carolina, Tennessee, Georgia, Alabama, Mississippi, Louisiana, Arkansas), and West (California, Colorado, Washington, Utah, Idaho, Montana, Arizona, New Mexico, Las Vegas, Oregon, Wyoming) regions. Scatter plots were created for each region with birth rate on the y-axis plotted against disease rate on the x-axis, with each point representing a year of data for each state. Dots were colored by state. Lines of best fit with a margin of error were plotted within the scatter plots as well. 
-            <br><br>To conduct our statistical analyses, we computed Pearson's R correlation coefficient for each geographic region and disease. Pearson's R value was computed as a means of assessing strength and direction of the linear relationship between the two variables. This was done in using the following equation, where r represents the correlation coefficient, xi represents the values of disease rate in the data set, x bar refers to the mean disease rate, yi represents the values of birth rate in the data set, and y bar refers to the mean birth rate. 
-            <br><br>P-values were also computed to evaluate the significance of the relationship between STD diagnosis and birth rate. Based on these plots and computations, we investigated the degree to which chlamydia and gonorrhea rates impact birth rate, as discussed in subsequent sections of the study. 
-          </p>
-          <figure class="figure" id="fig1">
-            <img src="fig1.png" id="fig1-img" class="wide" alt="Workflow chart breaking down methods used in analysis">
-            <figcaption><b>Figure 1: General workflow of the analysis. </b>Chart describing the overall workflow of this project. Blue ovals represent the original data sets used, and green ovals represent the manipulated data and new data frames created. Pink boxes represent the plots made, and purple boxes represent the computations done. </figcaption>
-          </figure>
-        </p>
-        <p class="section-heading" id="results">Results
-          <p class="section-text" id="results-text">
-            The first portion of our results involved visualizing the data to get a sense of further directions. Figure 2 shows the trends in birth rates over time by state, given our timespan of interest. We noted the lack of consistency across states, and decided to break down states by region for our subsequent analyses given the variety of trends. Figure 3 and Figure 4 show the general chlamydia and gonorrhea trends over time by state, both of which show a general increase over time. 
-          </p>
-          <figure id="fig2">
-            <img src="fig2.png" id="fig2img" class="wide" alt="Descriptive visualizations of birth rates by state">
-            <figcaption><b>Figure 2: Descriptive visualizations of birth rates by state.</b></figcaption>
-          </figure>
-          <figure id="fig3">
-            <img src="fig3.png" id="fig3img" class="wide" alt="Descriptive visualizations of Chlamydia rates by state">
-            <figcaption><b>Figure 3: Descriptive visualizations of Chlamydia rates by state.</b></figcaption>
-          </figure>
-          <figure id="fig4">
-            <img src="fig4.png" id="fig4img" class="wide" alt="Descriptive visualizations of Gonnorhea rates by state">
-            <figcaption><b>Figure 4: Descriptive visualizations of Gonnorhea rates by state.</b></figcaption>
-          </figure>
-          <figure id="fig5">
-            <img src="fig5.png" class="wider" id="fig5img" alt="Choropleth visualizations of birth rates, STD rates, and ratios">
-            <figcaption><b>Figure 5: Choropleth visualizations of birth rates, STD rates, and ratios. </b>Top, from left to right: Chlamydia rate by state, gonorrhea rate by state, and birth rate by state in 2013. Bottom left: birth rate to chlamydia rate ratio. Bottom right: birth rate to gonorrhea rate 
-            </figcaption>
-          </figure>
-          <p class="section-text">
-            Next, we wanted to visualize the STD and birth rates in a more geographical manner in order to see more directly how states compare to one another in their trends. After plotting choropleth maps for STD and birth rates for several different years and noticing general consistency  over time between states relative to one another, we only included one year of data in our plots within Figure 5. We observed the chlamydia, gonorrhea, and birth rate by state for the 2013 data, as shown in the top row. While the scales within the legend are not standardized, reading the numbers allows us to note the slightly higher levels of chlamydia and gonorrhea in southeastern states of the US. We also noted a significantly higher birth rate in Utah as compared to other states. 
-            <br><br>The bottom rows of Figure 5 show the birth rate to chlamydia rate ratio and birth rate to gonorrhea rate ratio, respectively. There is general consistency across the states, although there appears to be a high birth rate to gonorrhea rate ratio in some northern states, including Idaho, Wyoming, Maine, New Hampshire, and Vermont. These choropleths allow for quick visualizations of this data; however, we continued our analysis using statistical computations, such as computing Pearson’s R correlation coefficient and evaluation of significant associations using p-values. 
-          </p>
-          
-          <p class="section-text" id="fig67desc">
-            Figures 6 and 7 depict the associations between birth rate and Gonorrhea rate by region. For these computations, we aimed to assess the correlation between Gonorrhea rate and birth rate by geographic region using R. The table in Figure 6 shows the Pearon’s R correlation coefficient and the p-value computed, while the plots in Figure 7 show the scatter plots with the line of best fit and margin of error indicating the general linear relationship between the two variables. Each state is indicated by color according to the legend. 
-          </p>
-          <figure id="fig6">
-            <img src="fig6.png" class="wide" id="fig6img" alt="Table of p-values and pearson's values for Gonorrhea rates by region ratio">
-            <figcaption><b>Figure 6: Table of p-values and pearson's values for Gonorrhea rates by region ratio.</b></figcaption>
-          </figure>
-          <figure id="fig7">
-            <img src="fig7.png" class="tall" id="fig7img" alt="Scatter plots of birth rates to Gonorrhea rates by region">
-            <figcaption><b>Figure 7: Scatter plots of birth rates to Gonorrhea rates by region.</b>Gonorrhea rates over birth rates for midwest states (top left), northeastern states (top right), western states (bottom left), and southern states (bottom right).
-            </figcaption>
-          </figure>
-          <p class="section-text" id="fig89desc">
-            Figures 8 and 9 mimic that of 6 and 7 wherein Figure 9 shows the Pearson's R and p-values computed for each geographic region according to the relationship between Chlamydia rates and birth rates. The scatter plots in Figure 8 similarly show the linear relationship between the two variables given the line of best fit and margin of error.
-          </p>
-          <figure id="fig8">
-            <img src="fig8.png" class="wide" id="fig8img" alt="Table of p-values and pearson's values for Chlamydia rates by region">
-            <figcaption><b>Figure 8: Table of p-values and pearson's values for Chlamydia rates by region.</b></figcaption>
-          </figure>
-          <figure id="fig9">
-            <img src="fig9.png" class="tall" id="fig9img" alt="Scatter plots of birth rates to Chlamydia rates by region">
-            <figcaption><b>Figure 9: Scatter plots of birth rates to Chlamydia rates by region. </b>Chlamydia rates over birth rates for midwest states (top left), northeastern states (top right), western states (bottom left), and southern states (bottom right).</figcaption>
-          </figure>
-        </p>
-        <p class="section-heading" id="discussion">Discussion
-          <p class="section-text" id="discussion-text">
-            The scatter plots, p-values and Pearson's correlation coefficients (Figures 6, 7, 8 & 9) provide insights into the relationship between STD rates and birth rates across different geographic regions.
-            <br><br>Chlamydia in the Northeast region has an extremely small p-value, indicating that there is a strong correlation between the two variables. It has a Pearson's value of 0.75, which shows that it has a strong positive linear correlation. Therefore, we can conclude that there is a strong linear correlation between Chlamydia rate and Birth rate in the Northeast region.
-            <br><br>Chlamydia in the South region, has a small p-value, which rejects the null hypothesis that there is no correlation between the STD rates and birth rates. It also has a Pearson's value of 0.44, which shows that it has a moderate positive linear correlation. Therefore we can conclude that there is a positive moderate correlation between Chlamydia rates and birth rates in the South region.
-            </p>
-          <p class="section-text" id="discussion-text2">
-            Gonorrhea in the South and Midwest and Chlamydia in the West have p-values higher than the significance level(0.05), therefore accepting the null hypothesis that there is no correlation between these STD rates and birth rates in the above regions. The groups mentioned above also have Pearson values, extremely close to 0, indicating little to no linear correlation. We can conclude that there is no correlation between Chlamydia rate and birth rate in the West, as well as Gonorrhea rate and birth rate in the South and Midwest.
-            <br><br>Chlamydia in the Midwest and Gonorrhea in the Northeast,  have small p-values, which reject the null hypothesis that there is no correlation between the STD rates and birth rates. They have Pearson’s values of 0.25 and 0.3, indicating a weak positive linear correlation. We can conclude that there is a weak positive linear correlation between the Chlamydia and Gonorrhea rates and birth rates in the Midwest and Northeast respectively.
-            <br><br>Gonorrhea in the West has a small p-value, which rejects the null hypothesis that there is no correlation between the STD rates and birth rates. It has a Pearson’s value of -0.24, indicating a weak negative linear correlation between the two variables. We can conclude that there is a weak negative linear correlation between Gonorrhea rates and birth rates in the West region.
-          </p>
-          <figure id="fig10">
-            <img src="fig10.png" class="widest" id="fig10img" alt="Summary of correlation analysis of Chlamydia & Gonorrhea rate and Birth rate">
-            <figcaption><b>Figure 10: Summary of correlation analysis of Chlamydia & Gonorrhea rate and Birth rate.</b></figcaption>
-          </figure>
-        </p>
-        <p class="section-heading" id="conclusion">Conclusion
-          <p class="section-text" id="conclusion-text">
-            The analysis reveals varying degrees of correlation, suggesting that the impact of STDs on birth rates may be influenced by regional factors. It could also be influenced by cultural and sociodemographic factors such as access to healthcare, education, socioeconomic status, and cultural attitudes towards sexual health . This, as well as the effect of intensity of public health interventions, could influence both STD and birth outcomes. In order to answer the question, “Do STD rates affect Birth rates?”, we would have to conduct further research with these factors included. 
-          </p>
-        </p>
-        <p class="section-heading" id="acknowledgements">Acknowledgements
-          <p class="section-text" id="acknowledgements-text">
-            This project was conducted by Daezy Ezeogo-Enwo, Dilan Fajardo, and myself in our Introduction to Data Science and Engineering for Majors class at Case Western Reserve University in May of 2024. Special thanks to our professor, Dr. Laura Bruckman, for her instruction and guidance on this project.
-          </p>
-        </p>
-        <p class="section-heading" id=references>References
-          <p class="section-text" id="references-text">[1]"Sexually Transmitted Infections Surveillance, 2022." Centers for Disease Control and Prevention, www.cdc.gov/std/statistics/2022/default.htm. Accessed 8 May 2024.
-            <br>[2]Cleveland Clinic medical professional. "Sexually Transmitted Infections (Sexually Transmitted Diseases)." Cleveland Clinic, my.clevelandclinic.org/health/diseases/9138-sexually-transmitted-diseases--infections-stds--stis. Accessed 8 May 2024.
-            <br>[3] "Natality, 2007-2022 Request." CDC WONDER, wonder.cdc.gov/natality-current.html. Accessed 8 May 2024.
-            <br>[4] "Sexually Transmitted Disease Morbidity on CDC WONDER." CDC WONDER, wonder.cdc.gov/std.html. Accessed 8 May 2024.
-            <br>[5]"CDC - Info Quality Support - Guidelines - FAQs - Science Support - Science Quality - OSQ - OS." Centers for Disease Control and Prevention, www.cdc.gov/os/quality/support/info-qual.htm. Accessed 8 May 2024.
-            <br>[6] "STD Facts - Pelvic Inflammatory Disease." Centers for Disease Control and Prevention, www.cdc.gov/std/pid/stdfact-pid.htm. Accessed 8 May 2024.
-            </p>
-        </p>
       </div>
     </section>
     <section id="projects">
