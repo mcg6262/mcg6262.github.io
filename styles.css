@@ -80,116 +80,6 @@ h1 {
   padding-top:70px;
 }
 
-figure {
-  color:var(--c5);
-  margin:20px 15%;
-  text-align: center;
-  padding:8px;
-}
-
-#intro, #intro-text, #data, #data-text, #approach, #approach-text, #summary, #summary-text {
-  margin: 8px 55% 0px 2%;
-}
-
-#methods {
-  margin: -1320px 2% 0px 50%;
-}
-#methods-text {
-  margin: 5px 2% 0px 50%;
-}
-
-#fig1 {
-  margin: -200px 50% 0px 0px;
-  padding-top: 40px;
-}
-
-#fig2 {
-  margin: 8px 55% 0px 2%;
-  padding-top:40px;
-}
-#fig3 {
-  margin: -330px 2% 0px 50%;
-}
-#fig4 {
-  margin: 8px 55% 0px 2%;
-  padding-top:30px;
-}
-#fig5 {
-  margin: -335px 2% 0px 50%;
-}
-
-#fig6 {
-  margin: 8px 55% 0px 2%;
-  padding-top:70px;
-}
-#fig7 {
-  margin: -570px 2% 0px 50%;
-}
-
-#fig67desc {
-  margin: 18px 55% 0px 2%;
-}
-
-#fig8 {
-  margin: 8px 55% 0px 2%;
-  padding-top:70px;
-}
-#fig9 {
-  margin: -520px 2% 0px 50%;
-}
-
-#fig89desc {
-  margin: 0px 55% 0px 2%;
-}
-
-#discussion-text2 {
-  margin: 18px 55% 0px 2%;
-}
-
-#fig10 {
-  margin: -405px 2% 0px 47%;
-}
-
-#conclusion {
-  margin-top: 80px ;
-}
-
-#acknowledgements, #acknowledgements-text {
-  margin: 8px 55% 0px 2%;
-}
-
-#references{
-  margin: -150px 2% 0px 50%;
-}
-#references-text {
-  margin: 8px 2% 50px 50%;
-  font-size:smaller;
-}
-
-.wide {
-  height:300px;
-  width:500px;
-}
-
-.wider {
-  height:300px;
-  width:700px;
-}
-
-.widest {
-  height:300px;
-  width:830px;
-}
-
-.tall {
-  height:700;
-  width:600px;
-}
-
-figcaption {
-  font-family:monospace;
-}
-
 #welcome-section p {
   padding: 0 20%;
   font-size:20px;
@@ -222,6 +112,13 @@ h2{
   background-color:var(--c5);
   color:var(--c5);
   margin-top:0px;
+}
+
+.painting-tile {
+    display:inline-block;
+    text-align:center;
+    width:2695px;
+    height:3823px;
 }
 
 .project-title {
